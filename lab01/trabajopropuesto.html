@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario para autorizacion de viaje</title>
+</head>
+<body>
+    <h1>travel authorization form</h1>
+    <form id="formulariodeviaje">
+        <h2>Seccion A</h2>
+        <p>
+            <label for="cargo">
+                Cargo
+            </label>
+            <input type="text" name="cargo" id=" cargo"
+            autocapitalize="characters"
+            placeholder="profesor"
+            minlength="4"
+            maxlength="100"
+            required>
+        </p>
+        <p>
+            <label for="name">nombre </label>
+            <input type="text" name="name" id="name"
+            placeholder="juan"
+            autocapitalize="characters"
+            minlength="4"
+            maxlength="100"
+            required>
+        </p>
+        <p>
+            <label for="flname">primer apellido </label>
+            <input type="text" name="name" id="name"
+            placeholder="perez"
+            autocapitalize="characters"
+            minlength="4"
+            maxlength="100"
+            required>
+        </p>
+        <p>
+            <label for="slname">segundo apellido </label>
+            <input type="text" name="name" id="name"
+            placeholder="carpio"
+            autocapitalize="characters"
+            minlength="4"
+            maxlength="100"
+            required>
+        </p>
+        <p>
+            <label for="slname">segundo apellido </label>
+            <input type="email" name="email" id="email"
+            placeholder="ejemplo@ejemplo2.com"
+            required>
+        </p>
+        
+        <p>
+            <label for="pnumber">numero de celular </label>
+            <input type="tel" name="pnumber" id="pnumber"
+            placeholder="999999999"
+            pattern="[0-9]{9}"
+            required>
+        </p>
+        <h2>Seccion B: Informacíon del viaje</h2>
+        <p>
+            <label for="aerolinea">nombre de la aerolinea</label>
+            <select name="aerolineas" id="aerolineas">
+                <option value="peruvuela">peruvuela</option>
+                <option value="jamaicaairlanes">jamaicaairlanes</option>
+                <option value="papobresairlanes">papobresairlanes</option>
+                <option value="lan">lan</option>
+            </select>
+        </p>
+        <p>
+            <label for="destino">destino</label>
+            <input type="text" name="destino" id="destino"
+            pattern="[a-z]"
+            required>
+        </p>
+        <p>
+            <label for="salida">fecha de salida</label>
+            <input type="date" name="salida" id="salida"
+            min="2020-01-01">
+        </p>
+        <p>
+            <label for="regreso">fecha de regreso</label>
+            <input type="date" name="regreso" id="regreso"
+            min="2020-01-01">
+        </p>
+        <p>
+            <label for="costo">costo estimado</label>
+            <input type="number" name="costo" name="costo"
+            min="100"
+            max="1000"
+            required>
+        </p>
+        <p>
+            
+        </p>
+    </form>
+</body>
+</html>
