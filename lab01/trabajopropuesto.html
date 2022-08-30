@@ -129,16 +129,13 @@
         <h3>gastos adicionales estimados</h3>
         <form oninput="resultado.value=parseInt(x.value)+parseInt(y.value)+parseInt(z.value)">
             <label for="coche">Alquiler del coche</label>
-            <input type="number" name="x" id="x"
+            <input type="number" name="x"
             min="100"
             max="600">
-            <br>
             <label for="hotel">Hotel</label>
-            <input type="number" name="y" id="y">
-            <br>
+            <input type="number" name="y">
             <label for="comida">comida</label>
-            <input type="number" name="z" id="z">
-            <br>
+            <input type="number" name="z">
             <label>Total estimado</label>
             <output name="resultado" for="x y z"></output>
         </form>
