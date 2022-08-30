@@ -129,7 +129,9 @@
         <h3>gastos adicionales estimados</h3>
         <form oninput="resultado.value=parseInt(x.value)+parseInt(y.value)+parseInt(z.value)">
             <label for="coche">Alquiler del coche</label>
-            <input type="number" name="x" id="x">
+            <input type="number" name="x" id="x"
+            min="100"
+            max="600">
             <br>
             <label for="hotel">Hotel</label>
             <input type="number" name="y" id="y">
@@ -140,6 +142,25 @@
             <label>Total estimado</label>
             <output name="resultado" for="x y z"></output>
         </form>
+        <p>
+            <label for="visita">¿incluye la visita al cliente?</label>
+            <input type="checkbox" name="visita" id="visita">
+        </p>
+        <label for="metodo">metodo de pago:</label>
+        <br>
+        <label for="metalico">metalico</label>
+        <input type="radio" id="metalico" name="metodo">
+        <label for="tarjeta">tarjeta de credito</label>
+        <input type="radio" id="tarjeta" name="metodo">
+        <label for="cheque">cheque</label>
+        <input type="radio" id="cheque" name="metodo">
+        <br>
+        <p>
+            <label for="proposito">prosito del viaje</label>
+            <input type="text" name="proposito" id="proposite">
+        </p>
+        <input type="submit">
+
     </form>
 </body>
 </html>
